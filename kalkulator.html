@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator</title>
+</head>
+<body>
+
+<script>
+    function unosBroja() {
+        return parseFloat(prompt("Unesite broj:"));
+    }
+    function unosOperacije() {
+        return prompt("Unesite operaciju (+, -, *, /):");
+    }
+    function izvrsiOperaciju(prviBroj, operacija, drugiBroj) {
+        switch (operacija) {
+            case "+":
+                return prviBroj + drugiBroj;
+            case "-":
+                return prviBroj - drugiBroj;
+            case "*":
+                return prviBroj * drugiBroj;
+            case "/":
+                return prviBroj / drugiBroj;
+            default:
+                return NaN; 
+        }
+    }
+    function izvrsiProgram() {
+        var prviBroj = unosBroja();
+        var operacija = unosOperacije();
+        var drugiBroj = unosBroja();
+        var rezultat = izvrsiOperaciju(prviBroj, operacija, drugiBroj);
+        if (isNaN(rezultat)) {
+            alert("Nepodržana operacija!");
+        } else {
+            alert("Rezultat: " + rezultat);
+        }
+    }
+    izvrsiProgram();
+</script>
+
+</body>
+</html>
