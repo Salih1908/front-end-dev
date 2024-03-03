@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+}
+
+.grid-galerije {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.kartica-slike {
+    width: calc(20% - 20px);
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+.plocica {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #3498db;
+}
+
+.plocica img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.naslov-slike {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    background-color: #f8f8f8;
+    color: #000;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 0px;
+}
+
+@media screen and (min-width: 48em) and (max-width: 64em) {
+    .kartica-slike {
+        width: calc(33.33% - 20px);
+    }
+}
+
+@media screen and (max-width: 48em) {
+    .kartica-slike {
+        width: calc(100% - 20px);
+    }
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerija slika</title>
+</head>
+<body>
+    <div class="Galerija">
+        <h1>Gallery Heading</h1>
+        
+        <div class="grid-galerije">
+            <div class="kartica-slike">
+                <div class="plocica">
+                    <img src="placeholder-image.png" alt="Slika 1">
+                    <p class="naslov-slike">Image Title </p>
+                </div>
+            </div>
+
+            <div class="kartica-slike">
+                <div class="plocica">
+                    <img src="placeholder-image.png" alt="Slika 2">
+                    <p class="naslov-slike">Image Title</p>
+                </div>
+            </div>
+            <div class="kartica-slike">
+                <div class="plocica">
+                    <img src="placeholder-image.png" alt="Slika 3">
+                    <p class="naslov-slike">Image Title</p>
+                </div>
+            </div>
+
+            <div class="kartica-slike">
+                <div class="plocica">
+                    <img src="placeholder-image.png" alt="Slika 4">
+                    <p class="naslov-slike">Image Title</p>
+                </div>
+            </div>
+
+            <div class="kartica-slike">
+                <div class="plocica">
+                    <img src="placeholder-image.png" alt="Slika 5">
+                    <p class="naslov-slike">Image Title</p>
+                </div>
+            </div>
+
+            <div class="kartica-slike">
+                <div class="plocica">
+                    <img src="placeholder-image.png" alt="Slika 6">
+                    <p class="naslov-slike">Image Title</p>
+                </div>
+            </div>
+
+            <div class="kartica-slike">
+                <div class="plocica">
+                    <img src="placeholder-image.png" alt="Slika 7">
+                    <p class="naslov-slike">Image Title</p>
+                </div>
+            </div>
+
+            <div class="kartica-slike">
+                <div class="plocica">
+                    <img src="placeholder-image.png" alt="Slika 8">
+                    <p class="naslov-slike">Image Title</p>
+                </div>
+            </div>
+
+            <div class="kartica-slike">
+                <div class="plocica">
+                    <img src="placeholder-image.png" alt="Slika 9">
+                    <p class="naslov-slike">Image Title</p>
+                </div>
+            </div>
+
+            <div class="kartica-slike">
+                <div class="plocica">
+                    <img src="placeholder-image.png" alt="Slika 10">
+                    <p class="naslov-slike">Image Title</p>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="lorem-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+    </div>
+</body>
+</html>
